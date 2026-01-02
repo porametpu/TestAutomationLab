@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on darwin)" generated="2026-01-02T17:35:39.296450" rpa="false" schemaversion="5">
+<suite id="s1" name="T7 Invalid Phone Number" source="/Users/3mrch/Documents/LabSE/TestAutomationLab/TestScript/T7/T7_Invalid Phone Number.robot">
+<test id="s1-t1" name="Open Workshop Registration Page" line="19">
+<kw name="Start Chrome">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:39.343662" level="INFO">Opening browser 'chrome' to base url 'file:///Users/3mrch/Documents/LabSE/TestAutomationLAB/Starterfiles/Registration.html'.</msg>
+<arg>${REGPAGE}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-02T17:35:39.343576" elapsed="0.570472"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-02T17:35:39.914524" elapsed="0.340713"/>
+</kw>
+<status status="PASS" start="2026-01-02T17:35:39.343328" elapsed="0.912053"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:40.264291" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-02T17:35:40.255558" elapsed="0.008793"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-02T17:35:40.264472" elapsed="0.068765"/>
+</kw>
+<status status="PASS" start="2026-01-02T17:35:39.343087" elapsed="0.990331"/>
+</test>
+<test id="s1-t2" name="Invalid Phone Number" line="24">
+<kw name="Start Chrome">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:40.334016" level="INFO">Opening browser 'chrome' to base url 'file:///Users/3mrch/Documents/LabSE/TestAutomationLAB/Starterfiles/Registration.html'.</msg>
+<arg>${REGPAGE}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-02T17:35:40.333901" elapsed="0.544514"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-02T17:35:40.878714" elapsed="0.338864"/>
+</kw>
+<status status="PASS" start="2026-01-02T17:35:40.333773" elapsed="0.883988"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.218550" level="INFO">Typing text 'Somyod' into text field 'firstname'.</msg>
+<arg>firstname</arg>
+<arg>${FNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T17:35:41.217993" elapsed="0.069410"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.287710" level="INFO">Typing text 'Sodsai' into text field 'lastname'.</msg>
+<arg>lastname</arg>
+<arg>${LNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T17:35:41.287554" elapsed="0.022644"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.310488" level="INFO">Typing text 'CS KKU' into text field 'organization'.</msg>
+<arg>organization</arg>
+<arg>${OGZ}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T17:35:41.310346" elapsed="0.021003"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.331605" level="INFO">Typing text 'somyod@kkumail.com' into text field 'email'.</msg>
+<arg>email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T17:35:41.331479" elapsed="0.021288"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.353002" level="INFO">Typing text 'osfsfplsa' into text field 'phone'.</msg>
+<arg>phone</arg>
+<arg>${IVPHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T17:35:41.352881" elapsed="0.039180"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.392298" level="INFO">Clicking button 'registerButton'.</msg>
+<arg>registerButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T17:35:41.392202" elapsed="0.019671"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.413167" level="INFO">Current location is 'file:///Users/3mrch/Documents/LabSE/TestAutomationLAB/Starterfiles/Registration.html'.</msg>
+<arg>${REGPAGE}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-01-02T17:35:41.411973" elapsed="0.001215"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T17:35:41.492608" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-02T17:35:41.492700" level="FAIL">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678' but did not.</msg>
+<arg>Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-01-02T17:35:41.413250" elapsed="0.081381">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678' but did not.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-01-02T17:35:41.494750" elapsed="0.000017"/>
+</kw>
+<status status="FAIL" start="2026-01-02T17:35:40.333559" elapsed="1.161301">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678' but did not.</status>
+</test>
+<status status="FAIL" start="2026-01-02T17:35:39.297776" elapsed="2.197265"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="T7 Invalid Phone Number" id="s1" pass="1" fail="1" skip="0">T7 Invalid Phone Number</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
